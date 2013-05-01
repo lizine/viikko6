@@ -1,0 +1,21 @@
+Is Design dead?
+
+Artikkelissa käsitellään kahta suunnittelutyyliä, evoluutionaarista suunnittelua (Evolurionary Design) ja Suuniteltua suunittelua (Planned Design).
+
+Evoluutionaarisessa suunnittelussa ohjelmistoa suunnitellaan samalla kun sitä tehdään, tämä voi johtaa ongelmiin, artikkelissa verrataankin että esimerkiksi koirankopin voi tehdä vain karkeiden suunnitelmien pohjalta mutta esimerkiksi pilvenpiirtäjää rakennettaessa täytyy olla tarkemmat suunnitelmat, ettei koko rakennus romahda puolivalmiina.
+
+Suunnitelu Design taas pyrkii suunnittelemaan ohjelmistoa jo etukäteen, luomaan ikäänkuin piirustukset tulevalle työlle. Koodaamista ei vielä tehdä suunnitteluvaiheessa. Suunnittelijat suunnittelvat koodin ja jättävät sen koodareille toteutettavaksi, suunittelijat voivat etääntyä ohjelmoinnin uusista käytänteistä koska tekevät vain suunnnittelutyötä, eivät ohjelmointia. Suunnittelijoiden ja ohjelmoijien välille kerääntyy jännitteitä. Vaikka nämä ongelmat saataisiinkin ratkaistua, jäljelle sää silti se suuri ongelma, että tilatun työn vaatimukset muuttuvat projektin edetessä.
+
+Evolutaarisessa suunnittelussa taas ongelmaksi muodostuu ad-hoc korjauksien ja hajaantumisen lisäksi myös muutosten aiheuttama hinta, suunnitteluvaiheen muutosten hinta moninkertaistuu tuotantoon lisättäessä.  XP:ssä oletetaan että tätä hintakäyrää voidaan tasoittaa tarpeeksi, jotta XP toimisi. Et kuitenkaan voi hyväksikäyttää XP:n osia jotka sallivat hintakäyrän tasoittamisen, tekemättä samalla asiota kuten testausta, refaktorointia ja jatkuvaa integraatiota, jotka mahdollistavat tasoittamisen . Monille jääkin paha maku XP:sä sillä he ovat vain hyväksikäyttäneet osia XP:stä, unohtaen testauksen ja muut mahdollistavat astiast ja  epäonistuneet sen vuoksi.
+
+XP:n oppien mukaan sinun ei myöskään tulisi tehdä turhaan mitään, mitä et vielä tarvitse. Nopeastitoteutettavatkin asiat joita et juuri tähän iteraatioon tarvitse, pitäisi jättää suosiolla seuraavaan. Kaikki ”ylimääräinen työ” lisä riskiä että parhaillaan meneilläänoleva iteraatio jäisi vajaasti toteutetuksi. Xpertit myöskin uskovat, että olet todennäköisimmin väärässä siitä, mitä kuvittelet tarvitsevasti tulevaisuudessa. Turha siis tehdä sitä.
+
+XP:ssä yksinkertaisuus on tärkeintä. Kent antaa neljä kriteeriä yksinertaisuudelle: Kaikki testit menevät läpi, koodi on läpinäyvää, ei duplikaatteja, mahdollisimman vähän luokkia ja metodeja. Ei kuitenkaan kannata jäädä liiaksi pohtimaan miten saisi mahdollisimman yksinkertaista koodia, sillä voit aina refaktoroida koodiasi. Koodin refaktoroimista, ei voi käsitellä ”turhana työnä”.
+
+Ohjelmointimallit ovat monen mielestä konfliktissa XP:n periaatteiden kautta. Malleja myöskin käytetään arttikkelin mukaan liikaa. Toisaalta yksnkertaisen suunnittelun periaatteet ajavat ohjelmoian käyttämään malleja. Vaikka XP:n suhte ohjelmointimalleihin onkin erilainen, ei se poista niiden arvoa. Ohjelmointimallien tunteminen on peruste suunnitelutyölle. Artikkelissa suositellaankin käyttämään himen aikaa niiden oppimiseen, ja käyttämään niitä harkiten, ei liian varhaisessa vaiheessa. Toimimattoman mallin voi myös aina ”vetää pois”.
+
+UML:n ja XP:n suhde on kirjoittajan mukaan kystyimpiä asioita. Jotkut ihmiste käyttävät kaavioita, toiset eivät. Kaavioiden kanssa tulisi pitää mielessä niiden perimmäisin käyttötarkoitus, eli kommunikaatio. Käytä tarpeellisia, asiaasi tukevia osia. Pidä kaaviot lyhyinä, yksnkertaisina ja älä kohtele niitä lopullisina suunnitelmina. Ohjelmoidessasi pitää usein palata suunnittelupöydän ääreen. Dokumentointiin ylläpidon työläyden vuoksi  UML:ää ei suositella.
+
+XP:ssä ei kuulemma ole tilaa arkkitehdeille, artikkelissa vastataan että erottautuminen ohjelmoijista tittelin arvulla ei ole hyvää johtajuutta. Ennemmin keskitytään tiimityöhön, ja XP:ssä käytetäänkin nimikettä valmentaja, sillä hyvän johtajan täytyy valmentaa tiimiään ja jalkautua sinne missä häntä tarvitaan, ei olla ”ylempänä” muita ja tehdä yksinoikeudella suunnitteluratkaisuja ohjemoijien puolesta.
+
+Loppukaneettina artikkelissa todetaan, että design  ei ole kuollut, mutta sen luonne on muuttunut. XP vaatii laajaa osaamista, koodin puhtaana pitämistä, mallien tuntemista, kommunikaatiotaitoja ja paljon muuta. 
